@@ -2,19 +2,20 @@
 # for every value of x.
 
 import csv
+import pandas as pd
+import numpy as np
 
-with open("datapoints.csv", newline='') as file_name:
- readData = csv.reader(file_name)
- listData = list(readData)
- listData.pop(0)
+file_name = pd.read_csv('datapoints.csv')
+list_data = file_name
+list_data.head()
  
- a = 10
- b = 0
- 
- for row in listData:
-     x = float(row[0])
-     y = a * x + b
-     print("y = " + str(y))
+a = 10 
+b = 0
+for row in list_data:
+    x = list_data['x']
+    y = a * x + b
+
+print('y = ' + str(y))
   
 
 

@@ -1,7 +1,8 @@
 # A program that reads a csv file and displays on the screen
 import csv
+import pandas as pd
 
-with open("datapoints.csv", newline='') as file_name:
-    readData = csv.reader(file_name)
-    listData = list(readData)
-    print(listData)
+
+file_name = pd.read_csv('datapoints.csv')
+list_data = file_name
+print( list_data.head())

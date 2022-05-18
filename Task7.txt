@@ -1,0 +1,2 @@
+Normalization could help to improve the algorithm. the MSE and the new_MSE has different range, The MSE has a range of 1 and the `new_MSE has a range of 100, Normalization will create new values and maintain a normal distribution of data. 
+
